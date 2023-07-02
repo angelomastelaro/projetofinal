@@ -1,0 +1,193 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.hero{
+    padding-top: 1px;
+    background-image: url(../imagens/bg-4.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: right center;
+}
+
+.hero-content{
+    margin: 80px auto 0;
+    width: 80%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero-content h1{
+    font-size: 56px;
+    text-shadow: 2px 2px 2px black ;/* 1 valor quanto que a sombra sera deslocada no eixo horizontal/ 2 eixo vertical 3 esfumacamento*/
+}
+
+.hero-content p{
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    display: inline-block;
+    padding: 16px;
+    border-bottom: 2px solid;
+}
+
+
+/*estilazação MENU*/
+.hero nav ul{
+    margin: 20px 50px 0 0;
+    text-align: right;
+}
+
+.hero nav li{
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid white;
+    margin-left: 16px;
+}
+
+.hero nav a{
+    background-color: rgba(0,0,0,0.3);
+    padding: 16px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;/*distancia de uma letra a outra*/
+}
+
+.hero nav a:hover{
+    background-color: rgba(0,0,0,.5);
+}
+
+/*SUBmenu*/
+.hero1{
+    margin-top: 20px;
+    margin-bottom: 150px;
+}
+
+.hero1 nav ul{
+    text-align: center;
+}
+
+.hero1 nav li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 16px;
+}
+.hero1 nav a{
+    padding: 5px;
+   display: block;
+   text-decoration: none;
+   color: rgb(0, 129, 221);
+   font-size: 15px;
+}
+
+.hero1 nav a:hover{
+    background-color: rgba(157, 155, 155, 0.3);
+    color:rgb(0, 72, 123) ;
+}
+
+
+/*eSTILIZAÇÃO CONTEUDO PRINCIPAL*/
+main{
+    width: 90%;
+    margin: auto;
+    max-width: 860px;
+} 
+
+
+article{
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+
+article h2{
+    color: green;
+    border-bottom: 2px solid green;
+    background-color:#eee;
+    padding: 10px;
+    margin-top: 0px;
+}
+ .art,a{
+    text-decoration: none;
+}
+
+.art a:visited{
+    color:blue ;
+}
+
+
+.img-demanda{
+    margin-left: 195px;
+    height: 300px;
+}
+
+.tabelainf{
+    width: 820px;
+    border-collapse: collapse;
+}
+
+.tabelainf td{
+    border: 1px solid black;
+    padding: 8px;
+    height: 50px;
+}
+
+thead{
+    text-align: left;
+    height: 80px;
+    background-color: green;
+    color:white;
+    border:1px solid black ;
+
+}
+
+.carrossel{
+    width: 315px;/*315*/
+    height: 180px;/*180*/
+   /* outline: 3px solid black;*/
+    overflow: hidden;
+    margin: 50px auto;
+  /*  box-shadow: 10px 10px 15px rgba(0,0,0,0.7);*/
+}
+
+
+.carrossel ul{
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 250px;
+}
+
+.carrossel li{
+    position: relative;
+    animation: slide 10s infinite ease-in-out;
+}
+
+@keyframes slide {
+    0%{left:0px;}
+    /*20%{left: 0px;}*/
+
+    30%{left: -268px;}
+    /*50%{left: -268px;}*/
+
+    60%{left:-550px ;}
+   /* 90%{left: -550px;}*/
+
+    100%{left: 0px;}
+}
+
+/*ESTILIZAÇÃO DO RODAPE DA PAGINA*/
+.rodape{
+    color:#ccc;
+    background-color: #6b6c68;
+    text-align: center;
+    padding: 30px;
+    text-shadow:2px 2px 2px black ;
+}
